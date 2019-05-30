@@ -2,7 +2,7 @@
 This repository contains the source code and supporting files associated with our book: <a href=https://amzn.to/2KfCptN>Intro to Python for Computer Science and Data Science: Learning to Program with AI, Big Data and the Cloud.</a>
     
 ![Cover image for Intro to Python for Computer Science and Data Science: 
-    Learning to Program with AI, Big Data and the Cloud](IntroToPythonCover.png)
+    Learning to Program with AI, Big Data and the Cloud](http://deitel.com/bookresources/IntroToPython/IntroToPythonCover.png)
 
 These files are Copyright 2020 by Pearson Education, Inc. All Rights Reserved. 
 
