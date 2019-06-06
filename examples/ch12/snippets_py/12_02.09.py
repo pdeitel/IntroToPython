@@ -7,7 +7,7 @@ word.spellcheck()
 
 word.correct()  # chooses word with the highest confidence value
 
-from textblob import Word
+from textblob import TextBlob
 
 sentence = TextBlob('Ths sentense has missplled wrds.')
 
