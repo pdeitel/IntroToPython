@@ -1,4 +1,4 @@
-# 16.4 Case Study: Time Series and Simple Linear Regression
+# 15.4 Case Study: Time Series and Simple Linear Regression
 
 # Loading the Average High Temperatures into a DataFrame
 import pandas as pd
@@ -68,7 +68,7 @@ import matplotlib.pyplot as plt
 
 line = plt.plot(x, y)
 
-# 16.4 Self Check
+# 15.4 Self Check
 # Exercise 3
 predict(1889)
 

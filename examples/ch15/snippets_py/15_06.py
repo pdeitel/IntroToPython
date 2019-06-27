@@ -1,4 +1,4 @@
-# 16.6 Case Study: Unsupervised Machine Learning, Part 1—Dimensionality Reduction
+# 15.6 Case Study: Unsupervised Machine Learning, Part 1—Dimensionality Reduction
 
 # Loading the Digits Dataset
 from sklearn.datasets import load_digits

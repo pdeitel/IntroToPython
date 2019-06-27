@@ -1,8 +1,8 @@
-# This file contains Sections 16.2 and 16.3 and all of their subsections and Self Check exercises
+# This file contains Sections 15.2 and 15.3 and all of their subsections and Self Check exercises
 
-# 16.2 Case Study: Classification with k-Nearest Neighbors and the Digits Dataset, Part 1
+# 15.2 Case Study: Classification with k-Nearest Neighbors and the Digits Dataset, Part 1
 
-# 16.2.2 Loading the Dataset
+# 15.2.2 Loading the Dataset
 from sklearn.datasets import load_digits
 
 digits = load_digits()
@@ -23,13 +23,13 @@ digits.images[13]
 # Preparing the Data for Use with Scikit-Learn
 digits.data[13]
 
-# 16.2.2 Self Check
+# 15.2.2 Self Check
 # Exercise 3
 digits.images[22]
 
 digits.target[22]
 
-# 16.2.3 Visualizing the Data
+# 15.2.3 Visualizing the Data
 
 # Creating the Diagram
 import matplotlib.pyplot as plt
@@ -46,7 +46,7 @@ for item in zip(axes.ravel(), digits.images, digits.target):
     axes.set_title(target)
 plt.tight_layout()     
 
-# 16.2.3 Self Check
+# 15.2.3 Self Check
 # Exercise 2
 axes = plt.subplot()
 
@@ -56,7 +56,7 @@ xticks = axes.set_xticks([])
 
 yticks = axes.set_yticks([])
 
-# 16.2.4 Splitting the Data for Training and Testing
+# 15.2.4 Splitting the Data for Training and Testing
 from sklearn.model_selection import train_test_split
 
 X_train, X_test, y_train, y_test = train_test_split(
@@ -67,15 +67,15 @@ X_train.shape
 
 X_test.shape
 
-# 16.2.5 Creating the Model
+# 15.2.5 Creating the Model
 from sklearn.neighbors import KNeighborsClassifier
 
 knn = KNeighborsClassifier()
 
-# 16.2.6 Training the Model
+# 15.2.6 Training the Model
 knn.fit(X=X_train, y=y_train)
 
-# 16.2.7 Predicting Digit Classes
+# 15.2.7 Predicting Digit Classes
 predicted = knn.predict(X=X_test)
 
 expected = y_test
@@ -88,7 +88,7 @@ wrong = [(p, e) for (p, e) in zip(predicted, expected) if p != e]
 
 wrong
 
-# 16.2.7 Self Check
+# 15.2.7 Self Check
 # Exercise 1
 print(f'{(len(expected) - len(wrong)) / len(expected):.2%}')
 
@@ -101,9 +101,9 @@ for p, e in zip(predicted, expected):
 
 wrong
 
-# 16.3 Case Study: Classification with k-Nearest Neighbors and the Digits Dataset, Part 2
+# 15.3 Case Study: Classification with k-Nearest Neighbors and the Digits Dataset, Part 2
 
-# 16.3.1 Metrics for Model Accuracy
+# 15.3.1 Metrics for Model Accuracy
 
 # Estimator Method score
 print(f'{knn.score(X_test, y_test):.2%}')
@@ -134,7 +134,7 @@ import seaborn as sns
 axes = sns.heatmap(confusion_df, annot=True, 
                     cmap='nipy_spectral_r')
 
-# 16.3.2 K-Fold Cross-Validation
+# 15.3.2 K-Fold Cross-Validation
 
 # KFold Class
 from sklearn.model_selection import KFold
@@ -153,7 +153,7 @@ print(f'Mean accuracy: {scores.mean():.2%}')
 
 print(f'Accuracy standard deviation: {scores.std():.2%}')
 
-# 16.3.3 Running Multiple Models to Find the Best One
+# 15.3.3 Running Multiple Models to Find the Best One
 from sklearn.svm import SVC
 
 from sklearn.naive_bayes import GaussianNB
@@ -171,7 +171,7 @@ for estimator_name, estimator_object in estimators.items():
            f'mean accuracy={scores.mean():.2%}; ' +
            f'standard deviation={scores.std():.2%}')
 
-# 16.3.4 Hyperparameter Tuning
+# 15.3.4 Hyperparameter Tuning
 for k in range(1, 20, 2):
      kfold = KFold(n_splits=10, random_state=11, shuffle=True)
      knn = KNeighborsClassifier(n_neighbors=k)

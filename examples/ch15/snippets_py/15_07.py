@@ -1,7 +1,7 @@
-# 16.7 Case Study: Unsupervised Machine Learning, Part 2—k-Means Clustering
+# 15.7 Case Study: Unsupervised Machine Learning, Part 2—k-Means Clustering
 # Iris Dataset
 
-# 16.7.1 Loading the Iris Dataset
+# 15.7.1 Loading the Iris Dataset
 from sklearn.datasets import load_iris
 
 iris = load_iris()
@@ -17,7 +17,7 @@ iris.target_names
 
 iris.feature_names
 
-# 16.7.2 Exploring the Iris Dataset: Descriptive Statistics with Pandas
+# 15.7.2 Exploring the Iris Dataset: Descriptive Statistics with Pandas
 import pandas as pd
 
 pd.set_option('max_columns', 5)
@@ -36,7 +36,7 @@ iris_df.describe()
 
 iris_df['species'].describe()
 
-# 16.7.3 Visualizing the Dataset with a Seaborn pairplot
+# 15.7.3 Visualizing the Dataset with a Seaborn pairplot
 import seaborn as sns
 
 sns.set(font_scale=1.1)
@@ -49,7 +49,7 @@ grid = sns.pairplot(data=iris_df, vars=iris_df.columns[0:4],
 # Displaying the pairplot in One Color
 grid = sns.pairplot(data=iris_df, vars=iris_df.columns[0:4])
 
-# 16.7.4 Using a KMeans Estimator
+# 15.7.4 Using a KMeans Estimator
 
 # Creating the Estimator
 from sklearn.cluster import KMeans
@@ -66,7 +66,7 @@ print(kmeans.labels_[50:100])
 
 print(kmeans.labels_[100:150])
 
-# 16.7.4 Self Check
+# 15.7.4 Self Check
 kmeans2 = KMeans(n_clusters=2)
 
 kmeans2.fit(iris.data)
@@ -75,7 +75,7 @@ print(kmeans2.labels_[0:50])
 
 print(kmeans2.labels_[50:150])
 
-# 16.7.5 Dimensionality Reduction with Principal Component Analysis
+# 15.7.5 Dimensionality Reduction with Principal Component Analysis
 # Creating the PCA Object
 from sklearn.decomposition import PCA
 
@@ -105,7 +105,7 @@ import matplotlib.pyplot as plt
 dots = plt.scatter(iris_centers[:,0], iris_centers[:,1], 
                     s=100, c='k')
 
-# 16.7.6 Choosing the Best Clustering Estimator
+# 15.7.6 Choosing the Best Clustering Estimator
 from sklearn.cluster import DBSCAN, MeanShift,\
      SpectralClustering, AgglomerativeClustering
 
