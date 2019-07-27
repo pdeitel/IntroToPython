@@ -63,7 +63,7 @@ if __name__ == '__main__':
 
     # set up pubnub-market-orders sensor stream key
     config = PNConfiguration()
-    config.subscribe_key = 'YOUR KEY HERE'
+    config.subscribe_key = 'sub-c-4377ab04-f100-11e3-bffd-02ee2ddab7fe'
  
     # create PubNub client and register a SubscribeCallback
     pubnub = PubNub(config) 
