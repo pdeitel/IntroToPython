@@ -9,7 +9,7 @@ Then terminate IPython interactive mode (Ctrl + D twice) after you close the scr
 This repository contains the source code and supporting files associated with our book: <a href=https://amzn.to/2KfCptN>_Intro to Python for Computer Science and Data Science: Learning to Program with AI, Big Data and the Cloud_.</a>
     
 ![Cover image for Intro to Python for Computer Science and Data Science: 
-    Learning to Program with AI, Big Data and the Cloud](http://deitel.com/bookresources/IntroToPython/IntroToPythonCover.png)
+    Learning to Program with AI, Big Data and the Cloud](https://deitel.com/wp-content/uploads/2020/01/intro-to-python-for-computer-science-and-data-science.jpg)
 
 These files are Copyright 2020 by Pearson Education, Inc. All Rights Reserved. 
 
