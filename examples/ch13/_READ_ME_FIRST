@@ -1,0 +1,20 @@
+Upgrading from Twitter v1.1 to Twitter v2
+On August 18, 2022, we discovered that new Twitter developer accounts cannot access the Twitter version 1.1 APIs on which we based Chapter 13, Data Mining Twitter, and two case studies in Chapter 17, Big Data: Hadoop, Spark, NoSQL and IoT. 
+
+Twitter users who already had Twitter developer accounts can still access the Twitter version 1.1 APIs, but most students and some instructors will not fall into this category.
+ 
+We’re updating Chapter 13 and the two case studies in Chapter 17 to the Twitter version 2 APIs. We anticipate this could take two to four weeks as we:
+1.	master the new Twitter v2 APIs,
+2.	update our Chapter 13 and 17 code examples,
+3.	rewrite the code explanations in Chapters 13 and 17 to match the new code, 
+4.	update the exercise descriptions,
+5.	update the instructor resources: instructor’s manual solutions, test-item file, and Jupyter Notebooks slides (we use these in lieu of PowerPoint slides for our Python book), and 
+6.	update the student resources: source-code files and Jupyter Notebooks.
+
+Once completed, we’ll:
+•	post an updated version of Chapter 13 and the relevant sections of Chapter 17 to the book’s companion website on https://pearson.com/deitel, 
+•	post an updated version of Chapter 13 and the relevant sections of Chapter 17 to the book’s webpage on https://deitel.com,  
+•	post updated instructor materials to the Pearson Instructor Resource Center (IRC), which is accessible only to qualified instructors, and 
+•	post updated student files to the book’s GitHub repository. 
+ 
+If you have any questions, please email paul@deitel.com.
