@@ -1,10 +1,3 @@
-**NOTE:** If you're trying to run the RollDieDynamic.py script in Chapter 1 and the window does not appear, this is due to a known issue in the software for which a fix is already in process. You can instead run the program with 
-
-> `ipython -i RollDieDynamic.py 6000 1`
-    
-Then terminate IPython interactive mode (Ctrl + D twice) after you close the script's window.
-
-
 # IntroToPython
 This repository contains the source code and supporting files associated with our book: <a href=https://amzn.to/2KfCptN>_Intro to Python for Computer Science and Data Science: Learning to Program with AI, Big Data and the Cloud_.</a>
     
