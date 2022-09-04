@@ -1,0 +1,8 @@
+#consumer_key = 'NVqJ06iaqBbyIQDuxUUCiM5gd'
+#consumer_secret = 'fyVLUOxYMH6GSy8x7aA1OKLfhqUeRst4bnRMTImN1ASym0cgI9'
+#access_token = '24867870-4rhn9y3OzIK9OBu57QMBVHQWKZfMxWRxPZTJIIsKX'
+#access_token_secret = '3lv07LC30CKyzOjIEJiK1P5pdk94KIRTduFPqnIBU8LXb'
+
+mapquest_key = 'L0xOBy7HqIWsNgBvZvgVZx9HX1GSYzri'
+#deep_translator_key = 'de06403b5fda5f896b9b7c23df3e7c0a'
+bearer_token = 'AAAAAAAAAAAAAAAAAAAAAKKybwEAAAAAzvQFdKaTNAYKLzB1RX7Pmz25yJg%3DgNB7yVp00rLtwsmETSvoePoc2ymdOYfZb54Mw8A4LqwpYlTC2X'
