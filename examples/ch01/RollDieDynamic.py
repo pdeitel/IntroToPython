@@ -14,7 +14,7 @@ def update(frame_number, rolls, faces, frequencies):
 
     # reconfigure plot for updated die frequencies
     plt.cla()  # clear old contents contents of current Figure
-    axes = sns.barplot(faces, frequencies, palette='bright')  # new bars
+    axes = sns.barplot(x=faces, y=frequencies, palette='bright')  # new bars
     axes.set_title(f'Die Frequencies for {sum(frequencies):,} Rolls')
     axes.set(xlabel='Die Value', ylabel='Frequency')  
     axes.set_ylim(top=max(frequencies) * 1.10)  # scale y-axis by 10%
@@ -37,7 +37,7 @@ frequencies = [0] * 6  # six-element list of die frequencies
 
 # configure and start animation that calls function update
 die_animation = animation.FuncAnimation(
-    figure, update, repeat=False, frames=number_of_frames, interval=33,
+    figure, update, repeat=False, frames=number_of_frames - 1, interval=33,
     fargs=(rolls_per_frame, values, frequencies))
 
 plt.show()  # display window
