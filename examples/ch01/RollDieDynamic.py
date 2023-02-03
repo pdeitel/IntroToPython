@@ -37,7 +37,7 @@ frequencies = [0] * 6  # six-element list of die frequencies
 
 # configure and start animation that calls function update
 die_animation = animation.FuncAnimation(
-    figure, update, repeat=False, frames=number_of_frames, interval=33,
+    figure, update, repeat=False, frames=number_of_frames - 1, interval=33,
     fargs=(rolls_per_frame, values, frequencies))
 
 plt.show()  # display window
